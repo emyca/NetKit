@@ -1,5 +1,4 @@
 # NetSimple
-Android app. REST API usage demonstrated.
 
 Simple Android app with REST API usage.
 For REST API testing used JSONPlaceholder https://jsonplaceholder.typicode.com/.
