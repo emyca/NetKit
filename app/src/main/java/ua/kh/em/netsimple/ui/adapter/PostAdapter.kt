@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.adapter
+package ua.kh.em.netsimple.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ua.kh.em.netsimple.R
-import ua.kh.em.netsimple.adapter.PostAdapter.PostViewHolder
-import ua.kh.em.netsimple.model.Post
+import ua.kh.em.netsimple.ui.adapter.PostAdapter.PostViewHolder
+import ua.kh.em.netsimple.data.model.Post
 
 class PostAdapter(
     private val context: Context,

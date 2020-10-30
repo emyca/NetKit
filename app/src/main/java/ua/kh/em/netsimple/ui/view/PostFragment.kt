@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.ui
+package ua.kh.em.netsimple.ui.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,10 +13,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import ua.kh.em.netsimple.R
-import ua.kh.em.netsimple.adapter.PostAdapter
-import ua.kh.em.netsimple.model.Post
+import ua.kh.em.netsimple.ui.adapter.PostAdapter
+import ua.kh.em.netsimple.data.model.Post
 import ua.kh.em.netsimple.utils.CheckNet.isNetExists
-import ua.kh.em.netsimple.viewmodel.PostViewModel
+import ua.kh.em.netsimple.ui.viewmodel.PostViewModel
 
 
 class PostFragment : Fragment() {

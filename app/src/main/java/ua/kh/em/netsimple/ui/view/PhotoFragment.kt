@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.ui
+package ua.kh.em.netsimple.ui.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ua.kh.em.netsimple.R
-import ua.kh.em.netsimple.adapter.PhotoAdapter
-import ua.kh.em.netsimple.model.Photo
+import ua.kh.em.netsimple.ui.adapter.PhotoAdapter
+import ua.kh.em.netsimple.data.model.Photo
 import ua.kh.em.netsimple.utils.CheckNet
-import ua.kh.em.netsimple.viewmodel.PhotoViewModel
+import ua.kh.em.netsimple.ui.viewmodel.PhotoViewModel
 import java.util.ArrayList
 
 

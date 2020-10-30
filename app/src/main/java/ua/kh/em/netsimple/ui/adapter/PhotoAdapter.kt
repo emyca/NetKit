@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.adapter
+package ua.kh.em.netsimple.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import ua.kh.em.netsimple.R
-import ua.kh.em.netsimple.adapter.PhotoAdapter.PhotoViewHolder
-import ua.kh.em.netsimple.model.Photo
+import ua.kh.em.netsimple.ui.adapter.PhotoAdapter.PhotoViewHolder
+import ua.kh.em.netsimple.data.model.Photo
 
 
 class PhotoAdapter (

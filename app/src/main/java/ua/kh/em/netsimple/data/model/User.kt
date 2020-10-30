@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.model
+package ua.kh.em.netsimple.data.model
 
 import com.google.gson.annotations.SerializedName
 

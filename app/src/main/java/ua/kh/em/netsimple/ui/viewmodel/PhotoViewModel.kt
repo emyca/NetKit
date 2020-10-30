@@ -1,9 +1,9 @@
-package ua.kh.em.netsimple.viewmodel
+package ua.kh.em.netsimple.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import ua.kh.em.netsimple.model.Photo
-import ua.kh.em.netsimple.repository.AppRepository
+import ua.kh.em.netsimple.data.model.Photo
+import ua.kh.em.netsimple.data.repository.AppRepository
 
 
 class PhotoViewModel : ViewModel() {

@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.ui
+package ua.kh.em.netsimple.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

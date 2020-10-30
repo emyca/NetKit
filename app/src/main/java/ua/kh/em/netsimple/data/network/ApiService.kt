@@ -1,10 +1,10 @@
-package ua.kh.em.netsimple.network
+package ua.kh.em.netsimple.data.network
 
 import retrofit2.Call
 import retrofit2.http.GET
-import ua.kh.em.netsimple.model.Photo
-import ua.kh.em.netsimple.model.Post
-import ua.kh.em.netsimple.model.User
+import ua.kh.em.netsimple.data.model.Photo
+import ua.kh.em.netsimple.data.model.Post
+import ua.kh.em.netsimple.data.model.User
 
 interface ApiService {
 
