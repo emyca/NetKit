@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.ui.adapter
+package ua.kh.em.netkit.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import ua.kh.em.netsimple.R
-import ua.kh.em.netsimple.ui.adapter.UserAdapter.UserViewHolder
-import ua.kh.em.netsimple.data.model.User
+import ua.kh.em.netkit.R
+import ua.kh.em.netkit.ui.adapter.UserAdapter.UserViewHolder
+import ua.kh.em.netkit.data.model.User
 
 
 class UserAdapter(

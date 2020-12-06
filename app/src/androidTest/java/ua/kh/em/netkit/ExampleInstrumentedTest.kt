@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple
+package ua.kh.em.netkit
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

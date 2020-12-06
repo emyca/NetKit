@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple
+package ua.kh.em.netkit
 
 import org.junit.Test
 

@@ -1,9 +1,9 @@
-package ua.kh.em.netsimple.ui.viewmodel
+package ua.kh.em.netkit.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import ua.kh.em.netsimple.data.model.User
-import ua.kh.em.netsimple.data.repository.AppRepository
+import ua.kh.em.netkit.data.model.User
+import ua.kh.em.netkit.data.repository.AppRepository
 
 
 class UserViewModel : ViewModel() {

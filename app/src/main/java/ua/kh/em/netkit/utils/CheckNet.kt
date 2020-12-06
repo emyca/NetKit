@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.utils
+package ua.kh.em.netkit.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

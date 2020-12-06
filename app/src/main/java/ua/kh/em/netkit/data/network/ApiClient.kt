@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.data.network
+package ua.kh.em.netkit.data.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.ui.view
+package ua.kh.em.netkit.ui.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,33 +11,32 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ua.kh.em.netsimple.R
-import ua.kh.em.netsimple.ui.adapter.PhotoAdapter
-import ua.kh.em.netsimple.data.model.Photo
-import ua.kh.em.netsimple.utils.CheckNet
-import ua.kh.em.netsimple.ui.viewmodel.PhotoViewModel
+import ua.kh.em.netkit.R
+import ua.kh.em.netkit.ui.adapter.UserAdapter
+import ua.kh.em.netkit.data.model.User
+import ua.kh.em.netkit.utils.CheckNet
+import ua.kh.em.netkit.ui.viewmodel.UserViewModel
 import java.util.ArrayList
 
 
-class PhotoFragment : Fragment() {
+class UserFragment : Fragment() {
 
     companion object {
-        fun newInstance() = PhotoFragment()
+        fun newInstance() = UserFragment()
     }
 
     private var recyclerView: RecyclerView? = null
-    private val photoList: List<Photo> = ArrayList()
+    private val userList: List<User> = ArrayList()
     private var layoutManager: LinearLayoutManager? = null
-    private var adapter: PhotoAdapter? = null
+    private var adapter: UserAdapter? = null
     private var progressBar: ProgressBar? = null
-    private lateinit var viewModel: PhotoViewModel
-
+    private lateinit var viewModel: UserViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_photo, container, false)
+        val view = inflater.inflate(R.layout.fragment_user, container,false)
         initViews()
         if (CheckNet.isNetExists(context)) {
             setupRecyclerView(view)
@@ -54,9 +53,9 @@ class PhotoFragment : Fragment() {
     }
 
     private fun setupRecyclerView(view: View) {
-        recyclerView = view.findViewById(R.id.list_photos)
+        recyclerView = view.findViewById(R.id.list_users)
         if (adapter == null) {
-            adapter = PhotoAdapter(requireActivity(), photoList)
+            adapter = UserAdapter(requireActivity(), userList)
             layoutManager = LinearLayoutManager(requireActivity())
             recyclerView?.layoutManager = layoutManager
 
@@ -75,12 +74,12 @@ class PhotoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PhotoViewModel::class.java)
-        viewModel.loadPhotos().observe(requireActivity(), { photos: List<Photo>? ->
-            if (photos!= null) {
+        viewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        viewModel.loadUsers().observe(requireActivity(), { users: List<User>? ->
+            if (users != null) {
                 progressBar?.visibility = View.GONE
-                adapter?.addListPhotos(photos)
-            }else if (photoList.isEmpty()) {
+                adapter?.addListUsers(users)
+            }else if (userList.isEmpty()) {
                 progressBar?.visibility = View.GONE
                 Toast.makeText(context, R.string.something_wrong, Toast.LENGTH_LONG).show()
             }

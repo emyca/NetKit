@@ -1,14 +1,14 @@
-package ua.kh.em.netsimple.data.repository
+package ua.kh.em.netkit.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import ua.kh.em.netsimple.data.model.Photo
-import ua.kh.em.netsimple.data.model.Post
-import ua.kh.em.netsimple.data.model.User
-import ua.kh.em.netsimple.data.network.ApiClient
+import ua.kh.em.netkit.data.model.Photo
+import ua.kh.em.netkit.data.model.Post
+import ua.kh.em.netkit.data.model.User
+import ua.kh.em.netkit.data.network.ApiClient
 import java.util.ArrayList
 
 class AppRepository {

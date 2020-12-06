@@ -1,4 +1,4 @@
-package ua.kh.em.netsimple.ui.view
+package ua.kh.em.netkit.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.FrameLayout
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import ua.kh.em.netsimple.R
+import ua.kh.em.netkit.R
 
 
 class MainActivity : AppCompatActivity() {

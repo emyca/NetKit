@@ -1,12 +1,12 @@
-package ua.kh.em.netsimple.data.model
+package ua.kh.em.netkit.data.model
 
 import com.google.gson.annotations.SerializedName
 
-class Photo {
+class Post {
 
     @SerializedName("title")
     var title: String? = null
 
-    @SerializedName("url")
-    var image: String? = null
+    @SerializedName("body")
+    var body: String? = null
 }
